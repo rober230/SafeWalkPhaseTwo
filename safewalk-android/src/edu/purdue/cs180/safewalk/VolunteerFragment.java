@@ -108,8 +108,16 @@ public class VolunteerFragment extends Fragment implements ChannelListener, View
      * Volunteer application, so the only message it knows about it is the LOCATION message: "LOCATION id urgency".
      */
     public void messageReceived(String message) {
-        // TODO: handle message from server (only valid one is "LOCATION ID URGENCY") by updating model
+         // TODO: handle message from server (only valid one is "LOCATION ID URGENCY") by updating model
+    	String[] fields = message.split(" ");
+
+        if (fields[0].equals("REQUEST")) {
+            model.setUIEnabled(true);
+            model.setStatus(String.format("Proceed to %s", fields[1]));
+        } else
+            model.setStatus("Unexpected message: " + message);
         // TODO: don't forget to notify observers
+    	model.notifyObservers();
     }
 
     /**
