@@ -21,7 +21,7 @@ import android.widget.TextView;
  * INSTRUCTIONS: Study RequesterFragment.java and fill in comparable code where TODO markers are.
  * 
  * @author rober230
- * @author e
+ * @author eejiofor
  */
 @SuppressLint("DefaultLocale")
 public class VolunteerFragment extends Fragment implements ChannelListener, View.OnClickListener, Observer, OnItemSelectedListener {
