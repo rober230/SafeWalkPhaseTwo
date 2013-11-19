@@ -79,7 +79,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
      * @return androidChannel
      */
     public static AndroidChannel initializeChannel() {
-        return new AndroidChannel("pc.cs.purdue.edu", 8888);
+        return new AndroidChannel("pc.cs.purdue.edu", 1025);
     }
 
 }
