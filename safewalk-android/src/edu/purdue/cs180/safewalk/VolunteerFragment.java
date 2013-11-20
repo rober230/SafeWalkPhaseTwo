@@ -31,6 +31,7 @@ public class VolunteerFragment extends Fragment implements ChannelListener, View
     private Button button;
     private TextView status;
     private Spinner locations;
+    private Spinner urgencies;
 
     /**
      * Creates the Volunteer user interface, and sets up the model and channel to the server.
